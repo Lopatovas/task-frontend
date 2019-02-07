@@ -1,0 +1,23 @@
+.dollarSymbol{
+    font-size: 8vw;
+    font-weight: bold;
+    display: flex;
+    padding-top: 12vw;
+    margin-left: 5vh;
+}
+
+.priceBig{
+    font-size: 28vw;
+    font-weight: bold;
+}
+
+.priceSmall{
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 11vw;
+}
+
+.priceText{
+    font-size: 4vw;
+    font-weight: bold;
+}

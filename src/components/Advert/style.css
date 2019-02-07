@@ -1,0 +1,29 @@
+.textBig{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.topPadding{
+    padding-top: 10vw;
+}
+
+.discountText{
+    color: #ff4c4c;
+}
+
+.buttonStyling{
+    background-color: #ff4c4c !important;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 110% auto;
+    padding: 3%;
+    width: 65%;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobileCenter{
+        padding-left: 25%
+    }
+}
