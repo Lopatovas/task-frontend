@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 export default function Countdown(props) {
   return (
     <div className="row">
-        <p className="col-0 triangleColor">&#9654;</p>
+        <p className="col-0 triangleColor mobileStyling">&#9654;</p>
             <div className="col-8">
                <div className="row">
                     <CountdownItem text={config.DAYS} time={props.days} />

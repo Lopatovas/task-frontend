@@ -10,3 +10,13 @@
     font-weight: bold;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .countdownText{
+        font-size:50%;
+    }
+
+    .countdownNumbers{
+        font-size: 100%;
+    }
+}

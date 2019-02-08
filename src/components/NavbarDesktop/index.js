@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png'
 import config from '../../constants';
 import urls from '../../urls';
 
-export default class Navbar extends React.Component {
+export default class NavbarDesktop extends React.Component {
   render() {
     return (
         <div className="customNavbar">

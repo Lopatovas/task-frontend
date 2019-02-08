@@ -21,3 +21,28 @@
     font-size: 4vw;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+    .priceBig{
+        font-size: 25vh;
+        margin-bottom: 0px;
+    }
+
+    .dollarSymbol{
+        font-size: 12vw;
+        padding-top: 20vw;
+        margin-left: 10vh;
+        margin-bottom: 0px;
+    }
+
+    .priceSmall{
+        font-size: 8vw;
+        padding-top: 18vw;
+    }
+
+    .priceText{
+        font-size: 6vw;
+        margin-left: 0;
+        margin-bottom: 0px;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import Navbar from '../../components/Navbar';
+import NavbarDesktop from '../../components/NavbarDesktop';
+import NavbarMobile from '../../components/NavbarMobile';
 import Footer from '../../components/Footer';
 import PriceItem from '../../components/PriceItem';
 import Advert from '../../components/Advert';
@@ -45,10 +46,12 @@ export default class Frontpage extends React.Component {
     const { clock } = this.state;
     return (
         <div className='frontpageBackground'>
+            {window.screen.width < 1000 ? <NavbarMobile /> : null}
             <div className='container'>
-                <Navbar />
                 {window.screen.width > 1000 ? (
-                <div className="row">
+                <React.Fragment>
+                  <NavbarDesktop />
+                  <div className="row">
                     <Advert 
                         days={clock.days}
                         hours={clock.hours}
@@ -56,10 +59,11 @@ export default class Frontpage extends React.Component {
                         seconds={clock.seconds}
                     />
                     <PriceItem />
-                </div>) : 
+                  </div>
+                </React.Fragment>) : 
                 <React.Fragment>
                   <div className="row">
-                    <PriceItem />
+                    <PriceItem/>
                   </div>
                   <div className="row">
                     <Advert 
